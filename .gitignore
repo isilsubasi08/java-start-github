@@ -3,3 +3,6 @@ StaticExample/out
 StaticExample/.idea
 *.iml
 *.class
+hello/out
+hello/.idea
+
