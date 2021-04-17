@@ -2,3 +2,4 @@
 StaticExample/out
 StaticExample/.idea
 *.iml
+*.class
