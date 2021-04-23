@@ -14,25 +14,27 @@ public class Main {
         newUser.job="BestPerson";*/
 
         User myUser=new User("Isilay","Software");
-        //System.out.println("myUser namme:"+myUser.name);
+        System.out.println("myUser namme:"+myUser.name);
+        System.out.println("Abstract:"+myUser.information());
 
 
         Musicians musicians=new Musicians("İsilay","Guitar",25);
-        System.out.println(musicians.getName());
+        //System.out.println(musicians.getName());
         musicians.setAge(60);
-        System.out.println(musicians.getAge());
+        //System.out.println(musicians.getAge());
 
 
 
         SuperMusician lars=new SuperMusician("lars","saz",67);
-        System.out.println(lars.sing());
-        System.out.println(lars.getName());
+        //System.out.println(lars.sing());
+        //System.out.println(lars.getName());
 
         //Static Polymorphism
         Mathematics mt=new Mathematics();
-        System.out.println(mt.sum());
-        System.out.println(mt.sum(5,6));
-        System.out.println(mt.sum(5,6,90));
+        //System.out.println(mt.sum());
+
+        //System.out.println(mt.sum(5,6));
+        //System.out.println(mt.sum(5,6,90));
 
         //Dinamik Polymorphism
         Animal animal=new Animal();
@@ -40,6 +42,12 @@ public class Main {
         Dog barley=new Dog();
         barley.sing();
         barley.test();
+
+
+        Piano myPiano=new Piano();
+        myPiano.brand="Philips";
+        myPiano.digital=true;
+        myPiano.info();
 
 
 

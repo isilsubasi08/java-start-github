@@ -1,6 +1,6 @@
 package com.company;
 
-public class User {
+public class User extends People {
 
     //Property
     String name;
