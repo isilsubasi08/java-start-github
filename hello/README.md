@@ -51,9 +51,42 @@ User muUser=new User("İsilay","Software");
 
 
 ```
+## ENCAPSULATION
+**Encapsulatıon:** Kendi değişkenlerimizi, kendi propertylerimizi sınıfın kendi içerisinde tutmak istersek ne olur?<br>
+**Hapsetmek**,**KapsülEtmek**<br>
+1. Musıcıans classı oluşturdum.İçindeki propertler;<br>
+  - String name;<br>
+  - String instrument;<br>
+  - int age;<br>
+  
+2. Musisians clasının Constructor yapısı:<br>
+```
+public Musicians(String name,String instrument,int age){
+  this.name=name;
+  this.instrument=instrument;
+  int.age=age;
+  }
 
+```   
+3. Main Classda;<br>
+```
 
+Musicians james=new Musicians("James","Guitar","50");
+System.out.println(james.age); // 50
+james.age=79;
+Syout(james.age);//79
 
+```
+Ama ben yukarıdaki değişikliği yapmak istemiyorsam,Değişkenleri private yaparım. İşte buna encapsulatınon denir.<br>
+4. **Encapsulation** 100 kişilik bir projede çalışıyorum. Ve benim yazdığım sınıftan bir obje oluşturulduktan sonra hiçbir şekilde değiştirilmesin isteyebilirim. Hatta okunmasın bile isterim. Olduda değiştirilsin ama okunmasın veya okunsun ama değiştirilemesin gibi şeyler istiyebilirim.Bunun içinde **getter** ve **setter** metotları devreye girer.<br>
+
+5.  **getter**
+  ```
+public String getName(){
+  return name;
+}
+
+  ```
 
 
 
