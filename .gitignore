@@ -5,3 +5,5 @@ StaticExample/.idea
 *.class
 hello/out
 hello/.idea
+java-class-example/out
+java-class-example/.idea
